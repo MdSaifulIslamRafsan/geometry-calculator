@@ -37,7 +37,7 @@
               <span>cm</span>
             </div>
             <div>
-              <h1 class="text-xl">Area : <span id="triangle-area">0</span> cm<sup>2</sup></h1>
+              <h1 id="triangle-area" class="text-xl">Area : <span>0</span> cm<sup>2</sup></h1>
             </div>
           <div class="card-actions justify-end">
             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -58,7 +58,7 @@
             </div>
             <div>
               <div>
-                <h1 class="text-xl">Area : <span id="rectangle-area">0</span> cm<sup>2</sup></h1>
+                <h1 id= "rectangle-area" class="text-xl">Area : <span>0</span> cm<sup>2</sup></h1>
               </div>
             </div>
           <div class="card-actions justify-end">
@@ -79,7 +79,7 @@
               <span>cm</span>
             </div>
             <div>
-              <h1 class="text-xl">Area : <span id="parallelogram-area">0</span> cm<sup>2</sup></h1>
+              <h1 id="parallelogram-area" class="text-xl">Area : <span>0</span> cm<sup>2</sup></h1>
             </div>
           <div class="card-actions justify-end">
             <button id="parallelogram-btn" class="btn btn-primary w-full">Calculate</button>
@@ -93,13 +93,16 @@
           <h2 class="card-title">Rhombus</h2>
           <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
             <div class="flex items-center">
-              <input type="text" placeholder="b" class="w-20 mr-2 text-xl p-2 rounded-lg input input-bordered"/>
+              <input id="rhombus-base" type="text" placeholder="b" class="w-20 mr-2 text-xl p-2 rounded-lg input input-bordered"/>
               <span>cm</span>
-              <input type="text" placeholder="h" class="w-20 text-xl p-2 mx-2 text rounded-lg input input-bordered"/>
+              <input id="rhombus-height" type="text" placeholder="h" class="w-20 text-xl p-2 mx-2 text rounded-lg input input-bordered"/>
               <span>cm</span>
             </div>
+            <div>
+              <h1 id="rhombus-area" class="text-xl">Area : <span>0</span> cm<sup>2</sup></h1>
+            </div>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary w-full">Calculate</button>
+            <button onclick="rhombusAreaCalculation()" class="btn btn-primary w-full">Calculate</button>
           </div>
         </div>
       </div>
@@ -149,5 +152,6 @@
   <script src="js/triangle.js"></script>
   <script src="js/rectangle.js"></script>
   <script src="js/parallelogram.js"></script>
+  <script src="js/rhombus.js"></script>
 </body>
 </html>

@@ -12,10 +12,10 @@ function rectangleAreaCalculation() {
 
   //check validation
   if (isNaN(rectangleBaseText) || isNaN(rectangleLengthText)) {
-    rectangleArea.parentNode.innerText = "sorry it is empty value";
+    rectangleArea.innerText = "sorry it is empty value"
   } else {
     // rectangle calculate
     const rectangleAreaCalculate = rectangleBaseText * rectangleLengthText;
-    rectangleArea.innerText = rectangleAreaCalculate;
+    rectangleArea.innerHTML =`<h1 class="text-xl">Area : <span>${rectangleAreaCalculate}</span> cm<sup>2</sup></h1>`;
   }
 }

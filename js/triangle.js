@@ -10,14 +10,13 @@ function calculateTriangleArea() {
     const triangleAreaShowBowser = document.getElementById('triangle-area');
     // check validation
     if (isNaN(triangleBaseText) || isNaN(triangleHeightText)) {
-        triangleAreaShowBowser.parentNode.innerText = 'sorry it is empty value';
+        triangleAreaShowBowser.innerText = 'sorry it is empty value';
     }
     else{
-        
         // triangle calculaton
         const triangleArea = ((1/2) * triangleBaseText * triangleHeightText);
         // set triangle area output
-        triangleAreaShowBowser.innerText = triangleArea;
+        triangleAreaShowBowser.innerHTML =`Area : <span>${triangleArea}</span> cm<sup>2</sup>`;
     }
 }
 
