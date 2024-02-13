@@ -6,7 +6,7 @@ function calculateTriangleArea() {
     // get triangle height
     const triangleHeightInput = document.getElementById('triangle-h');
     const triangleHeightText = parseFloat(triangleHeightInput.value);
-    // get triangle area show
+    // display triangle area
     const triangleAreaShowBowser = document.getElementById('triangle-area');
     // check validation
     if (isNaN(triangleBaseText) || isNaN(triangleHeightText)) {

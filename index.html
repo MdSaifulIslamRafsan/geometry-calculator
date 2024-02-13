@@ -31,13 +31,13 @@
           <h2 class="card-title">Triangle</h2>
           <p>Area (A) = 0.5 x b x h</p>
             <div class="flex items-center">
-              <input id="triangle-b" type="text" placeholder="b" class="w-20 mr-2 text-2xl p-2 rounded-lg input input-bordered"/>
+              <input id="triangle-b" type="text" placeholder="b" class="w-20 mr-2 text-xl p-2 rounded-lg input input-bordered"/>
               <span>cm</span>
-              <input id="triangle-h" type="text" placeholder="h" class="w-20 text-2xl p-2 mx-2 text rounded-lg input input-bordered"/>
+              <input id="triangle-h" type="text" placeholder="h" class="w-20 text-xl p-2 mx-2 text rounded-lg input input-bordered"/>
               <span>cm</span>
             </div>
             <div>
-              <h1 class="text-xl">Area : <span id="triangle-area"></span> cm<sup>2</sup></h1>
+              <h1 class="text-xl">Area : <span id="triangle-area">0</span> cm<sup>2</sup></h1>
             </div>
           <div class="card-actions justify-end">
             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -51,13 +51,18 @@
           <h2 class="card-title">Rectangle</h2>
           <p>Area (A) = w x I</p>
             <div class="flex items-center">
-              <input type="text" placeholder="W" class="w-20 mr-2 text-2xl p-2 rounded-lg input input-bordered"/>
+              <input id="rectangle-length" type="text" placeholder="length" class="w-20 mr-2 text-xl p-2 rounded-lg input input-bordered"/>
               <span>cm</span>
-              <input type="text" placeholder="I" class="w-20 text-2xl p-2 mx-2 text rounded-lg input input-bordered"/>
+              <input id="rectangle-base" type="text" placeholder="width" class="w-20 text-xl p-2 mx-2 text rounded-lg input input-bordered"/>
               <span>cm</span>
             </div>
+            <div>
+              <div>
+                <h1 class="text-xl">Area : <span id="rectangle-area">0</span> cm<sup>2</sup></h1>
+              </div>
+            </div>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary w-full">Calculate</button>
+            <button onclick="rectangleAreaCalculation()" class="btn btn-primary w-full">Calculate</button>
           </div>
         </div>
       </div>
@@ -68,13 +73,13 @@
           <h2 class="card-title">Parallelogram</h2>
           <p>Area (A) = b x h</p>
             <div class="flex items-center">
-              <input type="text" placeholder="b" class="w-20 mr-2 text-2xl p-2 rounded-lg input input-bordered"/>
+              <input type="text" placeholder="b" class="w-20 mr-2 text-xl p-2 rounded-lg input input-bordered"/>
               <span>cm</span>
-              <input type="text" placeholder="h" class="w-20 text-2xl p-2 mx-2 text rounded-lg input input-bordered"/>
+              <input type="text" placeholder="h" class="w-20 text-xl p-2 mx-2 text rounded-lg input input-bordered"/>
               <span>cm</span>
             </div>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary w-full">Calculate</button>
+            <button  class="btn btn-primary w-full">Calculate</button>
           </div>
         </div>
       </div>
@@ -85,9 +90,9 @@
           <h2 class="card-title">Rhombus</h2>
           <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
             <div class="flex items-center">
-              <input type="text" placeholder="b" class="w-20 mr-2 text-2xl p-2 rounded-lg input input-bordered"/>
+              <input type="text" placeholder="b" class="w-20 mr-2 text-xl p-2 rounded-lg input input-bordered"/>
               <span>cm</span>
-              <input type="text" placeholder="h" class="w-20 text-2xl p-2 mx-2 text rounded-lg input input-bordered"/>
+              <input type="text" placeholder="h" class="w-20 text-xl p-2 mx-2 text rounded-lg input input-bordered"/>
               <span>cm</span>
             </div>
           <div class="card-actions justify-end">
@@ -102,9 +107,9 @@
           <h2 class="card-title">Pentagon</h2>
           <p>Area (A) = 0.5 x p x b</p>
             <div class="flex items-center">
-              <input type="text" placeholder="b" class="w-20 mr-2 text-2xl p-2 rounded-lg input input-bordered"/>
+              <input type="text" placeholder="b" class="w-20 mr-2 text-xl p-2 rounded-lg input input-bordered"/>
               <span>cm</span>
-              <input type="text" placeholder="h" class="w-20 text-2xl p-2 mx-2 text rounded-lg input input-bordered"/>
+              <input type="text" placeholder="h" class="w-20 text-xl p-2 mx-2 text rounded-lg input input-bordered"/>
               <span>cm</span>
             </div>
           <div class="card-actions justify-end">
@@ -119,9 +124,9 @@
           <h2 class="card-title">Triangle</h2>
           <p>Area (A) = 0.5 x b x h</p>
             <div class="flex items-center">
-              <input type="text" placeholder="b" class="w-20 mr-2 text-2xl p-2 rounded-lg input input-bordered"/>
+              <input type="text" placeholder="b" class="w-20 mr-2 text-xl p-2 rounded-lg input input-bordered"/>
               <span>cm</span>
-              <input type="text" placeholder="h" class="w-20 text-2xl p-2 mx-2 text rounded-lg input input-bordered"/>
+              <input type="text" placeholder="h" class="w-20 text-xl p-2 mx-2 text rounded-lg input input-bordered"/>
               <span>cm</span>
             </div>
           <div class="card-actions justify-end">
@@ -138,6 +143,7 @@
   </main>
   
 
-  <script src="scripts.js"></script>
+  <script src="js/triangle.js"></script>
+  <script src="js/rectangle.js"></script>
 </body>
 </html>
